@@ -1,0 +1,40 @@
+# EDA tool build artifacts / scratch -- not meant for version control
+csrc/
+*.daidir/
+simv*
+*.vdb
+*.vpd
+
+# Raw tool session logs, command echoes, license-server chatter
+*.log
+*.log[0-9]*
+*.logv*
+*.cmd
+*.cmd[0-9]*
+flex*.log
+*.tstamp
+*.mtarpt
+*.checkPlace
+*.conn.rpt
+*.powervia.rpt
+top.mtarpt
+verdi_config_file
+.fsm.sch.verilog.xml
+
+# Innovus database checkpoints -- large, and embed full copies of the
+# licensed standard-cell timing libraries (fast.lib/slow.lib). Never
+# push these to a public repo; the final GDS + netlist are the
+# deliverables that matter.
+*.enc
+*.enc.dat/
+
+# Genus/Innovus intermediate handoff bundle -- tool-internal, superseded
+# by the netlist + SDC actually kept (ahb2apb_bridge_async_netlist.v /
+# _syn.sdc, ahb2apb_bridge_async_final.v)
+syn/outputs/*_handoff.*
+
+# Stray license-manager lock files that ended up in pnr/outputs/
+pnr/outputs/eictn24*
+
+# Old/superseded report snapshots
+*.rpt.old

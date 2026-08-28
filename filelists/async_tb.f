@@ -1,0 +1,9 @@
+~/ASIC_practice/ahb2apb_flow/rtl/async/ahb2apb_bridge_async.v
+~/ASIC_practice/ahb2apb_flow/rtl/sync/ahb_slave_if.v
+~/ASIC_practice/ahb2apb_flow/rtl/sync/addr_decoder.v
+~/ASIC_practice/ahb2apb_flow/rtl/async/ahb_req_fsm.v
+~/ASIC_practice/ahb2apb_flow/rtl/async/apb_req_fsm.v
+~/ASIC_practice/ahb2apb_flow/rtl/async/async_fifo.v
+~/ASIC_practice/ahb2apb_flow/rtl/async/reset_sync.v
+~/ASIC_practice/ahb2apb_flow/tb/apb_slave_model.sv
+~/ASIC_practice/ahb2apb_flow/tb/tb_ahb2apb_async.sv
