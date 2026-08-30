@@ -108,7 +108,7 @@ Routing / signoff checks, all clean:
   32,914.5 µm total wirelength, 7,343 vias
 - GDSII streamed out: `pnr/outputs/ahb2apb_bridge_async.gds`
 
-
+![Post-route signoff layout](Images/signoff.png)
 
 ## Repo layout
 
