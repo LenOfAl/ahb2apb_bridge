@@ -125,12 +125,4 @@ pnr/scripts/     Innovus scripts: 01_init, 02_floorplan, 03_cts, 04_route_signof
 pnr/reports/     Innovus reports (timing, DRC, connectivity, route summary)
 pnr/outputs/     Final netlist, SDF, and GDSII
 docs/FLOW.md     Stage-by-stage walkthrough of the flow
-```
-
-
-# source 02_floorplan.tcl
-# source 03_cts.tcl
-# source 04_route_signoff.tcl
-```
-
-See `docs/FLOW.md` for what to check at each stage.
+...
