@@ -127,20 +127,7 @@ pnr/outputs/     Final netlist, SDF, and GDSII
 docs/FLOW.md     Stage-by-stage walkthrough of the flow
 ```
 
-## Reproducing
 
-```bash
-# 1. Simulate (VCS)
-cd sim/vcs && ./run_vcs_async.sh
-verdi -dbdir simv_async.daidir &
-
-# 2. Synthesize (Genus) — set your PDK paths in syn/scripts/setup_genus.tcl first
-cd ../../syn/scripts && genus -files run_genus.tcl -log ../reports/genus.log
-
-# 3. Place & route (Innovus) — run interactively the first time through,
-#    one stage at a time, so you can check each report before continuing
-cd ../../pnr/scripts && innovus
-# source 01_init.tcl
 # source 02_floorplan.tcl
 # source 03_cts.tcl
 # source 04_route_signoff.tcl
